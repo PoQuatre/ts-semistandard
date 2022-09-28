@@ -3,27 +3,27 @@
 [![npm](https://badgen.net/npm/v/ts-standard)](https://www.npmjs.com/package/ts-standard)
 [![npm](https://badgen.net/npm/dm/ts-standard)](https://www.npmjs.com/package/ts-standard)
 [![License](https://badgen.net/github/license/standard/ts-standard)](https://github.com/standard/ts-standard/blob/master/LICENSE)
-[![TS-Standard - Typescript Standard Style Guide](https://badgen.net/badge/code%20style/ts-standard/blue?icon=typescript)](https://github.com/standard/ts-standard)
+[![TS-Standard - Typescript Semi Standard Style Guide](https://badgen.net/badge/code%20style/ts-standard/blue?icon=typescript)](https://github.com/standard/ts-standard)
 [![Dependabot badge](https://badgen.net/github/dependabot/standard/ts-standard?icon=dependabot)](https://dependabot.com/)
 
-# ts-standard
+# ts-semistandard
 
 TypeScript Style Guide, with linter and automatic code fixer based on [StandardJS](https://standardjs.com/)
 
 ## 💾 Install
 
-`npm install ts-standard`
+`npm install ts-semistandard`
 
 ## ⌨️ Basic Usage
 
 ```sh
-ts-standard
+ts-semistandard
 ```
 
 Enable auto code fixing
 
 ```sh
-ts-standard --fix
+ts-semistandard --fix
 ```
 
 Note: A `tsconfig.json` or similar project file is required. See
@@ -33,10 +33,10 @@ section below for more details
 ## 📜 Help
 
 ```text
-ts-standard - Standard for Typescript! (https://github.com/standard/ts-standard)
+ts-semistandard - Standard for Typescript! (https://github.com/standard/ts-semistandard)
 
 Usage:
-    ts-standard <flags> [FILES...]
+    ts-semistandard <flags> [FILES...]
     If FILES is omitted, all JavaScript/Typescript source files (*.js, *.jsx, *.mjs, *.cjs, *.ts)
     in the current working directory are checked, recursively.
     Certain paths (node_modules/, coverage/, vendor/, *.min.js, bundle.js, and
@@ -59,17 +59,17 @@ Flags (advanced):
 
 ## 🧬 TSConfig: Linting with Type Information
 
-By default `ts-standard` will search the current working director (cwd) for the following in order
+By default `ts-semistandard` will search the current working director (cwd) for the following in order
 
 1. `tsconfig.eslint.json`
 2. `tsconfig.json`
 
 You can also manually configure the location of the `tsconfig` file by either passing the path to
-the `--project` flag or adding a `ts-standard` configuration property to your `package.json` file.
+the `--project` flag or adding a `ts-semistandard` configuration property to your `package.json` file.
 
 ```json
 {
-  "ts-standard": {
+  "ts-semistandard": {
     "project": "path/to/tsconfig.json"
   }
 }
@@ -81,16 +81,13 @@ Its possible to specify multiple projects using an array as in the underlying
 ## 🗑 Ignoring files and folders
 
 You can ignore files and folders by either providing specific files/globs of the files you want linted
-to `ts-standard` when running the command or you can add an `ignore` property to your `package.json`
-`ts-standard` configuration settings.
+to `ts-semistandard` when running the command or you can add an `ignore` property to your `package.json`
+`ts-semistandard` configuration settings.
 
 ```json
 {
-  "ts-standard": {
-    "ignore": [
-      "dist",
-      "src/**/*.js"
-    ]
+  "ts-semistandard": {
+    "ignore": ["dist", "src/**/*.js"]
   }
 }
 ```
@@ -99,20 +96,20 @@ to `ts-standard` when running the command or you can add an `ignore` property to
 
 ```jsonc
 {
-  "ts-standard": {
-    "ignore": [""],             // files/folders/globs to ignore
-    "noDefaultIgnore": false,   // disable ignoring default locations (e.g. node_modules, .git, etc...)
-    "globals": [""],            // global variables to define (e.g. $, jquery, etc...)
-    "plugins": [""],            // Extra eslint plugins to use
-    "envs": [""],               // eslint environments to use (e.g. node, browser, etc...)
-    "parser": "",               // a different eslint parser to use (e.g. babel, etc...)
-    "cwd": "",                  // the root working directory where the project file is located
-    "eslint": "",               // path to a custom eslint linter
-    "files": [""],              // files/folders/globs to include in the linting
-    "project": [""],            // relative path to `tsconfig.json` file
-    "fix": false,               // auto fix any lint errors found that are fixable
-    "report": "",               // an eslint formatter to output the lint results as (e.g. standard, stylish, json, etc...)
-    "extensions": "",           // a list of file extensions to lint by default (e.g. js,jsx,ts,tsx,mjs,cjs)
+  "ts-semistandard": {
+    "ignore": [""], // files/folders/globs to ignore
+    "noDefaultIgnore": false, // disable ignoring default locations (e.g. node_modules, .git, etc...)
+    "globals": [""], // global variables to define (e.g. $, jquery, etc...)
+    "plugins": [""], // Extra eslint plugins to use
+    "envs": [""], // eslint environments to use (e.g. node, browser, etc...)
+    "parser": "", // a different eslint parser to use (e.g. babel, etc...)
+    "cwd": "", // the root working directory where the project file is located
+    "eslint": "", // path to a custom eslint linter
+    "files": [""], // files/folders/globs to include in the linting
+    "project": [""], // relative path to `tsconfig.json` file
+    "fix": false, // auto fix any lint errors found that are fixable
+    "report": "", // an eslint formatter to output the lint results as (e.g. standard, stylish, json, etc...)
+    "extensions": "" // a list of file extensions to lint by default (e.g. js,jsx,ts,tsx,mjs,cjs)
   }
 }
 ```
@@ -133,7 +130,7 @@ ruleset.
 
 You can also choose to just use [`eslint`](https://github.com/eslint/eslint) with the
 `eslint-config-standard-with-typescript` shareable config instead and achieve the same results as
-this project. But `ts-standard` saves you from having to manually install all the extra dependencies
+this project. But `ts-semistandard` saves you from having to manually install all the extra dependencies
 and may reduce configuration overhead.
 
 ## 🎉 Special Thanks

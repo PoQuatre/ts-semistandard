@@ -49,7 +49,7 @@ export class TSStandard {
     ) {
       throw new Error(
         'Unable to locate the project file. A project file (tsconfig.json or ' +
-          'tsconfig.eslint.json) is required in order to use ts-standard.'
+          'tsconfig.eslint.json) is required in order to use ts-semistandard.'
       )
     }
 

@@ -29,7 +29,7 @@ async function cli() {
     if (options.project == null ||
         (Array.isArray(options.project) && options.project.length === 0)) {
         console.error('Unable to locate the project file. A project file (tsconfig.json or ' +
-            'tsconfig.eslint.json) is required in order to use ts-standard.');
+            'tsconfig.eslint.json) is required in order to use ts-semistandard.');
         return process.exit(1);
     }
     const tsStandard = new ts_standard_1.TSStandard({

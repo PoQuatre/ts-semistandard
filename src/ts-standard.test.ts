@@ -11,7 +11,7 @@ jest.mock('standard-engine')
 const customEslint = jest.fn().mockReturnThis()
 jest.mock('custom-eslint', () => customEslint, { virtual: true })
 
-describe('ts-standard', () => {
+describe('ts-semistandard', () => {
   describe('TSStandard', () => {
     describe('constructor', () => {
       it('should initialize a new standard-engine linter with the given settings', () => {

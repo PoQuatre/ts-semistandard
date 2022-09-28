@@ -6,7 +6,7 @@ const pkg_conf_1 = require("pkg-conf");
 const default_options_1 = require("./default-options");
 function getPackageOptions(cwd) {
     var _a;
-    const settings = (0, pkg_conf_1.sync)('ts-standard', { cwd });
+    const settings = (0, pkg_conf_1.sync)('ts-semistandard', { cwd });
     cwd = (_a = cwd !== null && cwd !== void 0 ? cwd : settings.cwd) !== null && _a !== void 0 ? _a : process.cwd();
     return {
         files: settings.files,

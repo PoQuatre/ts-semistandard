@@ -139,9 +139,9 @@ describe('standard-reporter', () => {
         }
       ])
       expect(res).toEqual(
-        `ts-standard: /some/path:1:1: lint error (custom-rule)
-ts-standard: /some/path:35:21: another lint error (other-rule)
-ts-standard: /some-other/path:0:0: other lint error ()`
+        `ts-semistandard: /some/path:1:1: lint error (custom-rule)
+ts-semistandard: /some/path:35:21: another lint error (other-rule)
+ts-semistandard: /some-other/path:0:0: other lint error ()`
       )
     })
   })

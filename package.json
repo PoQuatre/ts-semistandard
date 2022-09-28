@@ -1,11 +1,11 @@
 {
-  "name": "ts-standard",
-  "description": "Typescript Standard Style based on StandardJS",
+  "name": "ts-semistandard",
+  "description": "Typescript Semi Standard Style based on StandardJS",
   "version": "11.0.0",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "bin": {
-    "ts-standard": "./bin/cmd.js"
+    "ts-semistandard": "./bin/cmd.js"
   },
   "bugs": {
     "url": "https://github.com/standard/ts-standard/issues"
@@ -17,7 +17,7 @@
   "license": "MIT",
   "homepage": "https://github.com/standard/ts-standard",
   "keywords": [
-    "Typescript Standard Style",
+    "Typescript Semi Standard Style",
     "check",
     "checker",
     "code",
@@ -41,7 +41,7 @@
     "standardjs",
     "tslint"
   ],
-  "ts-standard": {
+  "ts-semistandard": {
     "project": "./tsconfig.eslint.json",
     "ignore": [
       "dist"

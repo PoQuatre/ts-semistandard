@@ -37,7 +37,7 @@ interface PackageOptions {
 }
 
 export function getPackageOptions (cwd?: string): PackageOptions {
-  const settings: PackageConfigOptions = sync('ts-standard', { cwd })
+  const settings: PackageConfigOptions = sync('ts-semistandard', { cwd })
   cwd = cwd ?? settings.cwd ?? process.cwd()
   return {
     files: settings.files,

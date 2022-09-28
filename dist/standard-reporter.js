@@ -3,7 +3,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.standardReporter = void 0;
 function standardReporter(isUsingStdInAndFix) {
     return (lintResults) => {
-        const prefix = isUsingStdInAndFix ? 'ts-standard:' : ' ';
+        const prefix = isUsingStdInAndFix ? 'ts-semistandard:' : ' ';
         let logResults = '';
         lintResults.forEach((res) => {
             res.messages.forEach((msg) => {

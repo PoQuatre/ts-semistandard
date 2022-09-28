@@ -4,7 +4,7 @@ export function standardReporter (
   isUsingStdInAndFix: boolean
 ): (results: LintResult[]) => string {
   return (lintResults: LintResult[]): string => {
-    const prefix = isUsingStdInAndFix ? 'ts-standard:' : ' '
+    const prefix = isUsingStdInAndFix ? 'ts-semistandard:' : ' '
     let logResults = ''
     lintResults.forEach((res) => {
       res.messages.forEach((msg) => {

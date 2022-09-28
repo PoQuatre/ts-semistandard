@@ -21,7 +21,7 @@ describe('standard-engine-api', () => {
   })
 
   describe('parseOpts', () => {
-    it('should initialize a new ts-standard linter with the given settings', () => {
+    it('should initialize a new ts-semistandard linter with the given settings', () => {
       const tsStandardSpy = jest
         .spyOn(tsStandardLib, 'TSStandard')
         .mockReturnThis()
@@ -37,7 +37,7 @@ describe('standard-engine-api', () => {
       })
     })
 
-    it('should use cached ts-standard instance on subsequent calls', () => {
+    it('should use cached ts-semistandard instance on subsequent calls', () => {
       const tsStandardSpy = jest
         .spyOn(tsStandardLib, 'TSStandard')
         .mockReturnThis()
@@ -55,7 +55,7 @@ describe('standard-engine-api', () => {
       })
     })
 
-    it('should use re-initialize ts-standard instance if cwd changes', () => {
+    it('should use re-initialize ts-semistandard instance if cwd changes', () => {
       const tsStandardSpy = jest
         .spyOn(tsStandardLib, 'TSStandard')
         .mockReturnThis()
@@ -140,7 +140,7 @@ describe('standard-engine-api', () => {
       })
     })
 
-    it('should used cached ts-standard instance if it exists', (cb): void => {
+    it('should used cached ts-semistandard instance if it exists', (cb): void => {
       const text = 'The darkside is strong in this one.'
       lintTextSpy.mockResolvedValueOnce('success!')
 
@@ -262,7 +262,7 @@ describe('standard-engine-api', () => {
       })
     })
 
-    it('should used cached ts-standard instance if it exists', (cb): void => {
+    it('should used cached ts-semistandard instance if it exists', (cb): void => {
       const files = ['The darkside is strong in this one.']
       lintFilesSpy.mockResolvedValueOnce('success!')
 
